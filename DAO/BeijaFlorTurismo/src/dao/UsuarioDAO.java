@@ -1,13 +1,17 @@
 package dao;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import database.DatabaseConnection;
 import model.Usuario;
 
 public class UsuarioDAO {
 	//CRUD -> Create, Read, Update, Delete;
+	Connection connection = null;
+	PreparedStatement preparador = null;
 	
 		public UsuarioDAO(Object connection) {
 		// TODO Auto-generated constructor stub
@@ -17,9 +21,10 @@ public class UsuarioDAO {
 			String sql = "INSERT INTO usuario (Login, Senha, HistoricoViagens) VALUES (?, ?, ?)";
 		
 			
+			
 			try { 
-				Statement Conexao = null;
-				PreparedStatement preparador = Conexao.getConnection().prepareStatement(sql);
+				connection = DatabaseConnection.getConnection();
+				preparador = connection.prepareStatement(sql);
 				
 				preparador.setString(1, usuarioEntrada.getLogin());
 				preparador.setString(2, usuarioEntrada.getSenha());
@@ -27,7 +32,6 @@ public class UsuarioDAO {
 				
 				preparador.execute();
 				
-				preparador.close();
 			
 			} catch (SQLException e) {
 				System.out.println("Deu um erro no cadastro!!\n\n"+e);

@@ -14,7 +14,7 @@ public class Main {
 	private static final String HistoricoViagens = null;
 
 	public static void main(String[] args) {
-        var connection = DatabaseConnection.createConnection();
+        var connection = DatabaseConnection.getConnection();
         UsuarioDAO usuarioDAO = new UsuarioDAO(connection);
         Scanner scanner = new Scanner(System.in);
  
@@ -33,8 +33,18 @@ public class Main {
             switch (escolha) {
                 case 1:
                     System.out.println("Novo Cadastro de Usuário");
-                    Usuario novoUsuario = lerDadosUsuario(scanner);
-                    usuarioDAO.createUsuario(novoUsuario);
+                    Usuario novoUsuario = new Usuario();
+                    System.out.print("Login: ");
+                    String login = scanner.nextLine();
+                    novoUsuario.setLogin(login);
+                    System.out.print("Senha: ");
+                    String senha = scanner.nextLine();
+                    novoUsuario.setSenha(senha);
+                    System.out.print("Historico de Viagens: ");
+                    String historicoViagens = scanner.nextLine();
+                    novoUsuario.setHistoricoViagens(historicoViagens);
+                    usuarioDAO.criarUsuario(novoUsuario);
+
                     break;
                 case 2:
                     System.out.println("Consultar Usuário");
@@ -47,20 +57,20 @@ public class Main {
                         System.out.println("Usuário não encontrado.");
                     }
                     break;
-                case 3:
-                    System.out.println("Atualizar Usuario");
-                    System.out.print("Informe o ID do Usuário a ser atualizado: ");
-                    int idAtualizacao = scanner.nextInt();
-                    Usuario usuarioAtualizar = usuarioDAO.readUsuario(idAtualizacao);
-                    if (usuarioAtualizar != null) {
-                        Usuario dadosAtualizados = lerDadosUsuario(scanner);
-                        dadosAtualizados.setidUsuario(idAtualizacao);
-                        usuarioDAO.updateUsuario(dadosAtualizados);
-                        System.out.println("Usuário atualizado com sucesso.");
-                    } else {
-                        System.out.println("Usuário não encontrado.");
-                    }
-                    break;
+//                case 3:
+//                    System.out.println("Atualizar Usuario");
+//                    System.out.print("Informe o ID do Usuário a ser atualizado: ");
+//                    int idAtualizacao = scanner.nextInt();
+//                    Usuario usuarioAtualizar = usuarioDAO.readUsuario(idAtualizacao);
+//                    if (usuarioAtualizar != null) {
+//                        Usuario dadosAtualizados = lerDadosUsuario(scanner);
+//                        dadosAtualizados.setidUsuario(idAtualizacao);
+//                        usuarioDAO.updateUsuario(dadosAtualizados);
+//                        System.out.println("Usuário atualizado com sucesso.");
+//                    } else {
+//                        System.out.println("Usuário não encontrado.");
+//                    }
+//                    break;
                 case 4:
                     System.out.println("Deletar Usuário");
                     System.out.print("Informe o ID do usuário a ser excluído: ");
@@ -81,21 +91,20 @@ public class Main {
             }
         } while (escolha != 5);
  
-        DatabaseConnection.closeConnection(connection);
         scanner.close();
     }
  
-    private static Usuario lerDadosUsuario(Scanner scanner) {
-        System.out.print("Login: ");
-        String Login = scanner.nextLine();
-        System.out.print("Senha: ");
-        String Senha = scanner.nextLine();
-        System.out.print("Historico de Viagens: ");
-        String HistoricoViagens = scanner.nextLine();
-
- 
-        return new Usuario(Login, Senha, HistoricoViagens);
-    }
+//    private static Usuario lerDadosUsuario(Scanner scanner) {
+//        System.out.print("Login: ");
+//        String login = scanner.nextLine();
+//        System.out.print("Senha: ");
+//        String senha = scanner.nextLine();
+//        System.out.print("Historico de Viagens: ");
+//        String historicoViagens = scanner.nextLine();
+//
+// 
+//        return new Usuario(login, senha, historicoViagens);
+//    }
 
 	public static String getLogin() {
 		return Login;
