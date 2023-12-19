@@ -70,14 +70,15 @@ Siga estas instruções para configurar e executar o projeto com sucesso.
   DEPLOY: https://beijaflorturismoo.netlify.app/<br><br>
 
 <STRONG> PARA O MODELO LÓGICO, CONCEITUAL E UML FORAM UTILIZADOS: </STRONG><BR><BR>
-[![Lucidchart](https://img.shields.io/badge/Lucidchart-FFA500?style=for-the-badge&logo=lucidchart&logoColor=white)](https://www.lucidchart.com/) [![Br Modelo](https://img.shields.io/badge/Br%20Modelo-008000?style=for-the-badge)](https://www.example.com)
+[![Br Modelo](https://img.shields.io/badge/Br%20Modelo-008000?style=for-the-badge)](https://www.example.com) [![Lucidchart](https://img.shields.io/badge/Lucidchart-FFA500?style=for-the-badge&logo=lucidchart&logoColor=white)](https://www.lucidchart.com/)
 <div style="display: inline_block" align = "center">
- OUTRAS FERRAMENTAS:
+ OUTRAS FERRAMENTAS E LINGUAGENS:
  <img align="center" alt="Polly-VS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">  
 <img align="center" alt="Polly-Html" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
 <img align="center" alt="Polly-CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
 <img align="center" alt="Polly-bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">  
 <img align="center" alt="Polly-eclipse" height="30" width="40" src="https://skillicons.dev/icons?i=eclipse" /> 
+<img align="center" alt="Polly-java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"> 
 <img align="center" alt="Polly-Mysql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
  
 </div> 
