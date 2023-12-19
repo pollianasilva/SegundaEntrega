@@ -67,6 +67,8 @@ Siga estas instruções para configurar e executar o projeto com sucesso.
 - Atualizar a versão anterior do site, refatorando se preciso as páginas: Home, Destino, Promoções, Contato e as demais de acordo com seu modelo de dados usando HTML, CSS Bootstrap. 
 - Faça as formatações de acordo com a paleta de cores escolhida.
 
+  DEPLOY: https://beijaflorturismoo.netlify.app/<br><br>
+
 <STRONG> PARA O MODELO LÓGICO, CONCEITUAL E UML FORAM UTILIZADOS: </STRONG><BR><BR>
 [![Lucidchart](https://img.shields.io/badge/Lucidchart-FFA500?style=for-the-badge&logo=lucidchart&logoColor=white)](https://www.lucidchart.com/) [![Br Modelo](https://img.shields.io/badge/Br%20Modelo-008000?style=for-the-badge)](https://www.example.com)
 <div style="display: inline_block" align = "center">
