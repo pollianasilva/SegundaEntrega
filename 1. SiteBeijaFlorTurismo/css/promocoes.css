@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.cartoes {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 5%;
+}
+
+.allcards {
+    margin: auto;  
+    width: 70%;
+    
+}
+.promocoes, h1 {
+ margin-left: 3%;
+
+}
+
+.footer {
+    background-color: snow;
+    padding-top: 5%;
+    color: #513443;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.footer a {
+    color: #513443;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline; 
+}
+
+.media-social {
+    padding-right: 5%;
+}
+
+footer > p {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.card-img-top {
+    height: 400px; 
+    object-fit: cover;
+}
+
+.btn-light {
+    background-color: #513443;
+    color: #ffffff;
+}
+
+.card-body {
+    color: #513443;
+    text-align: center;
+
+}
+
+.card-footer {
+    position: relative;
+    background: none;
+}
+
+.card-col {
+    margin-right: 15px; 
+    margin-bottom: 15px; 
+}
+

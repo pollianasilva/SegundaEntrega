@@ -1,0 +1,121 @@
+body{
+    background-color: #f8f8f8;
+}
+
+.registration-form{
+	padding: 50px 0;
+}
+
+.registration-form form{
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon{
+	text-align: center;
+    background-color: #513443;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    line-height: 100px;
+}
+
+.registration-form .item{
+	border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.registration-form .create-account {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #513443;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.registration-form .button-container {
+    text-align: center;
+}
+
+.registration-form .create-account + .create-account {
+    margin-left: 20px; 
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .registration-form form{
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+
+.footer {
+    background-color: snow;
+    padding-top: 5%;
+    color: #513443;
+    text-align: center;
+    margin-top: -15px;
+    
+}
+
+.footer a {
+    color: #513443;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline; 
+}
+
+
+
+.registration-form .social-links{
+    padding: 0;
+    margin: 0 0 15px;
+    list-style: none;
+    
+}
+
+.registration-form .social-links li{
+    display: inline-block;
+    margin: 0 3px;
+}
+.registration-form .social-links li a{
+    color: #555;
+    line-height: 27px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.registration-form .social-links li a:hover{
+    color: #fff;
+    background-color: #513443;
+}

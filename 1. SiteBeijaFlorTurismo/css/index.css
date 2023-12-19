@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+@media screen and (max-width: 858px) {
+    .center {
+        margin-left: 15%;
+        width: 120%;
+    }
+}
+
+html,body {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header {
+    height: 200px;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 50%;
+}
+
+.menu {
+    padding-top: 30px;
+    width: 50%;
+    text-align: right;
+}
+
+.menu a {
+    color: #513443;
+    text-decoration: none;    
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+section.sobre {
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras {
+    position: fixed;
+    bottom: -450px;
+    right: -500px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: #513443;
+}
+
+@media screen and (max-width: 858px) {
+    .extras {
+        width: 500px;
+    }
+}
+
+/*.social-media {
+    position: absolute;
+    left: 430px;
+    top: 200px; 
+} 
+
+.social-media img {
+    display: block;
+    width: 50px;
+    margin: 20px 0;
+}(para ficar do lado do globo)*/
+
+.texto-sobre {
+    margin-top: 100px;
+    width: 55%;
+}
+
+.texto-sobre h1 {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 485px) {
+    .texto-sobre h1 {
+        font-size: 30px;
+    }
+}
+
+.texto-sobre p {
+    margin: 20px 0;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 800px;
+    margin-top: 3%;
+}
+
+.texto-sobre button {
+    border: 0;
+    background-color: #513443;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+.footer {
+    padding-top: 1%;
+    color: #513443;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.footer a {
+    color: #513443;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline; 
+}
+
+@media screen and (max-width: 1451px) {
+    .footer {
+        font-size: 15px;
+        margin-left: 3%;
+    }
+}
+
+.media-social {
+    margin-bottom: 15px;
+}
+
+
+.search-container {
+    background-color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+
+
